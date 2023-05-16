@@ -1,8 +1,9 @@
-
-import React from 'react';
+import React from "react";
+import { getTranslation } from "../services/Translations";
 
 const Home = () => {
-  return <h2>Accueil</h2>;
+  const homeNavTitle = getTranslation("fr", "home");
+  return <h2>{homeNavTitle}</h2>;
 };
 
 export default Home;

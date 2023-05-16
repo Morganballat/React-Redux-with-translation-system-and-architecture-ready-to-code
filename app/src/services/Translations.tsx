@@ -1,11 +1,13 @@
-import translations from '../translations.json';
+import translations from "../translations.json";
 
-export const getTranslation = (lang: string) => {
-  const availableTranslations = translations as { [key: string]: { [key: string]: string } };
-
-  if (availableTranslations[lang]) {
-    return availableTranslations[lang];
-  }
+export const getTranslation = (lang: string, key: string) => {
+  const availableTranslations = translations as {
+    [lang: string]: { [key: string]: string };
+  };
   
-  return translations['en'];
+  if (availableTranslations[lang][key]) {
+    return availableTranslations[lang][key];
+  }
+
+  return availableTranslations["en"][key];
 };
