@@ -1,10 +1,21 @@
 {
   "en": {
     "home": "Home",
-    "buttonText": "Click Me"
+    "about": "About",
+    "contact": "Contact",
+    "catalogue": "Catalogue",
+    "signIn": "Sign in",
+    "logIn": "Log in",
+    "myAccount": "My account"
   },
   "fr": {
     "home": "Accueil",
-    "buttonText": "Cliquez ici"
+    "about": "À propos",
+    "contact": "Contact",
+    "catalogue": "Catalogue",
+    "signIn": "S'inscrire",
+    "logIn": "Se connecter",
+    "myAccount": "Mon compte"
+
   }
 }

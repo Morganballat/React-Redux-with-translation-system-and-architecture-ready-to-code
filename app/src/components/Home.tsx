@@ -3,7 +3,7 @@ import { getTranslation } from "../services/Translations";
 
 const Home = () => {
   const homeNavTitle = getTranslation("fr", "home");
-  return <h2>{homeNavTitle}</h2>;
+  return <h2 className="d-flex justify-content-center">{homeNavTitle}</h2>;
 };
 
 export default Home;
