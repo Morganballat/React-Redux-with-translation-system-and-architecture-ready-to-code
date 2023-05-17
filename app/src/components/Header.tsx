@@ -1,14 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { getTranslation } from "../services/Translations";
+import { useResolvedPath } from "react-router-dom";
 
 const Header: React.FC = () => {
-  const homeNavTitle = getTranslation("fr", "home");
-  const catalogueNavTitle = getTranslation("fr", "catalogue");
-  const signInNavTitle = getTranslation("fr", "signIn");
-  const logInNavTitle = getTranslation("fr", "logIn");
-  const accountNavTitle = getTranslation("fr", "myAccount");
-
+  const homeNavTitle = getTranslation("home");
+  const catalogueNavTitle = getTranslation("catalogue");
+  const signInNavTitle = getTranslation("signIn");
+  const logInNavTitle = getTranslation("logIn");
+  const accountNavTitle = getTranslation("myAccount");
 
   return (
     <header className="bg-warning">
